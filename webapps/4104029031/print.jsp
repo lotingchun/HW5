@@ -12,8 +12,8 @@ out.println(name);
 out.println(sex);%>
 <br>
 興趣=
-<%  request.setCharacterEncoding("UTF-8");
-String h[]= request.getParameterValues("hobby");
+<%  request.setCharacterEncoding("utf-8");
+String[] h= request.getParameterValues("hobby");
 for(int i=0;i<h.length;i++){
   out.println("<br>");
  out.println(h[i]);
