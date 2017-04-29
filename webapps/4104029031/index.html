@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="utf-8">
+<title>個人履歷表</title>
+</head>
+<body>
+	<form name="form1" action="print.jsp" method="post">
+	   姓名-><br>
+		<input type="text" name="username" />
+		<br>
+	    <br>
+		性別-><br>
+		 <input type="radio" name="sex" value="male"> 男
+	    <input type="radio" name="sex" value="female"> 女<br>
+		興趣-><br>
+		<input type="checkbox" name="hobby" value="movie">電影
+	 <input type="checkbox" name="hobby" value="eating">吃吃吃
+		<input type="checkbox" name="hobby" value="exercising">運動<br>
+		<input type="checkbox" name="hobby" value="sleeping">睡覺
+		<input type="checkbox" name="hobby" value="reading novel">小說
+		<input type="checkbox" name="hobby" value="listening to music">音樂
+		<br>
+		自傳-><br>
+		<textarea name="note" cols="40" rows="10" required></textarea>
+		<br>
+		喜歡的電影類型(按CTRL可複選)<br>
+		<SELECT name=movie size=5 Multiple>
+				<OPTION value = "Action" selected>Action</OPTION>
+				<OPTION value = "Comedies">Comedies</OPTION>
+				<OPTION value = "Epics/ Historical films" selected>Epics/ Historical films</OPTION>
+				<OPTION value = "Horror" >Horror </OPTION>
+				<OPTION value = "Drama" >drama</OPTION>
+			</SELECT>
+    <br>  喜歡的水果(下拉清單)<br>
+			<SELECT name="fruit" size=1>
+				<OPTION selected>apple</OPTION>
+				<OPTION>banana</OPTION>
+				<OPTION >grape</OPTION>
+			</SELECT>
+		<br>
+
+
+
+<input type="submit" value="送出">
+</form>
+</body>
+</html>
