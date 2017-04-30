@@ -3,8 +3,9 @@
 <head><title>appear</title></head>
 <body>
 姓名=<br>
-<% String name=request.getParameter("username");
-out.println(name);
+<% request.setCharacterEncoding("UTF-8");
+String name=request.getParameter("username");
+   out.println(name);
 %>
 <br>
 性別=<br>
@@ -12,7 +13,7 @@ out.println(name);
 out.println(sex);%>
 <br>
 興趣=
-<%  request.setCharacterEncoding("utf-8");
+<%
 String[] h= request.getParameterValues("hobby");
 for(int i=0;i<h.length;i++){
   out.println("<br>");
